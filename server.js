@@ -9,6 +9,10 @@ const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.json({ message: "Hello, World!" });
+});
+
 app.get("/api/classify-number", async (req, res) => {
   const num = parseInt(req.query.number);
 
