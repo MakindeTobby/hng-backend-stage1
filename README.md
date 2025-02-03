@@ -15,7 +15,7 @@ This is a simple public API that takes a number and returns interesting mathemat
 
 ## 📌 Live API URL
 
-🔗 **[View Live API](https://)**
+🔗 **[View Live API](https://hng-backend-stage1-e4la.vercel.app/api/classify-number?number=381)**
 
 ---
 
@@ -24,7 +24,7 @@ This is a simple public API that takes a number and returns interesting mathemat
 ### **1️⃣ Clone the Repository**
 
 ```sh
-git clone https://github.com/MakindeTobby/hng-backend-stage0.git
+git clone https://github.com/MakindeTobby/hng-backend-stage1.git
 cd hng-backend-stage1
 ```
 
@@ -78,7 +78,7 @@ Example JSON Response Format (400 Bad Request)
 Using JavaScript (Fetch API):
 
 ```
-fetch("https://hng-backend-stage0-qfts.onrender.com")
+fetch("https://hng-backend-stage1-e4la.vercel.app/api/classify-number?number=381")
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error(error));
@@ -89,13 +89,13 @@ fetch("https://hng-backend-stage0-qfts.onrender.com")
 
 - Node.js
 - Express.js
-- Render (for deployment)
+- Vercel (for deployment)
 
-<!-- ## 📢 Hire Node.js Developers
+## 📢 Hire Node.js Developers
 
 Looking to hire top Node.js developers?
 Check out **HNG Talent Pool:**
-🔗 **[Hire Node.js Developers](https://hng.tech/hire/nodejs-developers)** -->
+🔗 **[Hire Node.js Developers](https://hng.tech/hire/nodejs-developers)**
 
 ## 🤝 Contributing
 
