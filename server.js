@@ -17,7 +17,9 @@ app.get("/api/classify-number", async (req, res) => {
   const num = parseInt(req.query.number);
 
   if (isNaN(num)) {
-    return res.status(400).json({ error: "Number parameter is required" });
+    return res
+      .status(400)
+      .json({ number: req.query.number || "alphabet", error: true });
   }
 
   let properties = [];
