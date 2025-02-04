@@ -25,7 +25,7 @@ function isArmstrong(n) {
 }
 
 function digitSum(num) {
-  n = Math.abs(num); // Ensure only positive integers are processed
+  let n = Math.abs(num); // Ensure only positive integers are processed
   let sum = 0;
 
   while (n > 0) {
