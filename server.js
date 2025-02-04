@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8000;
 app.use(cors());
 
 app.get("/api/classify-number", async (req, res) => {
-  let num = parseInt(req.query.number);
+  const num = parseFloat(req.query.number);
 
   if (isNaN(num)) {
     return res.status(400).json({ number: req.query.number, error: true });
