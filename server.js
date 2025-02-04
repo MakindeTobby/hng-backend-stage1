@@ -18,7 +18,7 @@ app.get("/api/classify-number", async (req, res) => {
       .json({ number: req.query.number || "alphabet", error: true });
   }
 
-  num = Math.abs(num); // Ensure only positive integers are processed
+  // num = Math.abs(num); // Ensure only positive integers are processed
 
   let properties = [];
   if (helpers.isArmstrong(num)) properties.push("armstrong");
