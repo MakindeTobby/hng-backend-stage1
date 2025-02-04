@@ -18,7 +18,8 @@ function isPerfect(n) {
   return sum === n;
 }
 
-function isArmstrong(n) {
+function isArmstrong(num) {
+  let n = Math.abs(num);
   const digits = n.toString().split("").map(Number);
   const power = digits.length;
   return digits.reduce((sum, d) => sum + Math.pow(d, power), 0) === n;
