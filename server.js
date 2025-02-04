@@ -13,12 +13,8 @@ app.get("/api/classify-number", async (req, res) => {
   let num = parseInt(req.query.number);
 
   if (isNaN(num)) {
-    return res
-      .status(400)
-      .json({ number: req.query.number || "alphabet", error: true });
+    return res.status(400).json({ number: req.query.number, error: true });
   }
-
-  num = Math.abs(num); // Ensure only positive integers are processed
 
   let properties = [];
   if (helpers.isArmstrong(num)) properties.push("armstrong");

@@ -24,8 +24,10 @@ function isArmstrong(n) {
   return digits.reduce((sum, d) => sum + Math.pow(d, power), 0) === n;
 }
 
-function digitSum(n) {
+function digitSum(num) {
+  n = Math.abs(num); // Ensure only positive integers are processed
   let sum = 0;
+
   while (n > 0) {
     sum += n % 10; // Extract last digit
     n = Math.floor(n / 10); // Remove last digit
